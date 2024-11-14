@@ -967,6 +967,7 @@ GameObject:
   - component: {fileID: 204074359}
   - component: {fileID: 204074358}
   - component: {fileID: 204074357}
+  - component: {fileID: 204074360}
   m_Layer: 5
   m_Name: Muebles
   m_TagString: Untagged
@@ -983,7 +984,7 @@ RectTransform:
   m_GameObject: {fileID: 204074355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07, y: 2, z: 1}
+  m_LocalScale: {x: 0.07, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 503053251}
@@ -991,7 +992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 35, y: 30}
+  m_AnchoredPosition: {x: 35, y: 30.000036}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &204074357
@@ -1076,6 +1077,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 204074355}
   m_CullTransparentMesh: 1
+--- !u!114 &204074360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204074355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 204074355}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1001 &220351861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1373,6 +1417,7 @@ GameObject:
   - component: {fileID: 274214367}
   - component: {fileID: 274214366}
   - component: {fileID: 274214365}
+  - component: {fileID: 274214368}
   m_Layer: 5
   m_Name: Personas
   m_TagString: Untagged
@@ -1389,7 +1434,7 @@ RectTransform:
   m_GameObject: {fileID: 274214363}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07, y: 2, z: 1}
+  m_LocalScale: {x: 0.07, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1406730407}
@@ -1397,7 +1442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -18, y: 30}
+  m_AnchoredPosition: {x: -18, y: 30.000036}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274214365
@@ -1482,6 +1527,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274214363}
   m_CullTransparentMesh: 1
+--- !u!114 &274214368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274214363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 274214363}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1 &282623568
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1582,7 @@ GameObject:
   - component: {fileID: 282623572}
   - component: {fileID: 282623571}
   - component: {fileID: 282623570}
+  - component: {fileID: 282623573}
   m_Layer: 5
   m_Name: Eliminar
   m_TagString: Untagged
@@ -1510,7 +1599,7 @@ RectTransform:
   m_GameObject: {fileID: 282623568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 2, z: 1}
+  m_LocalScale: {x: 0.1, y: 1.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 727405772}
@@ -1519,7 +1608,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 35, y: -15}
+  m_AnchoredPosition: {x: 35, y: -18.499983}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &282623570
@@ -1604,6 +1693,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282623568}
   m_CullTransparentMesh: 1
+--- !u!114 &282623573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282623568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 282623568}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1 &289328296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,6 +1748,7 @@ GameObject:
   - component: {fileID: 289328300}
   - component: {fileID: 289328299}
   - component: {fileID: 289328298}
+  - component: {fileID: 289328301}
   m_Layer: 5
   m_Name: Maquina Vendedoras
   m_TagString: Untagged
@@ -1632,7 +1765,7 @@ RectTransform:
   m_GameObject: {fileID: 289328296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07, y: 2, z: 1}
+  m_LocalScale: {x: 0.07, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 893675967}
@@ -1640,7 +1773,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 18, y: 30}
+  m_AnchoredPosition: {x: 18, y: 30.000036}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &289328298
@@ -1725,6 +1858,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289328296}
   m_CullTransparentMesh: 1
+--- !u!114 &289328301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289328296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 289328296}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1 &319682044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2209,6 +2385,7 @@ GameObject:
   - component: {fileID: 371128551}
   - component: {fileID: 371128553}
   - component: {fileID: 371128552}
+  - component: {fileID: 371128554}
   m_Layer: 5
   m_Name: MenuMV
   m_TagString: Untagged
@@ -2276,6 +2453,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371128550}
   m_CullTransparentMesh: 1
+--- !u!114 &371128554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371128550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1 &374057177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2508,7 @@ GameObject:
   - component: {fileID: 374057181}
   - component: {fileID: 374057180}
   - component: {fileID: 374057179}
+  - component: {fileID: 374057182}
   m_Layer: 5
   m_Name: Mover
   m_TagString: Untagged
@@ -2304,7 +2525,7 @@ RectTransform:
   m_GameObject: {fileID: 374057177}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 2, z: 1}
+  m_LocalScale: {x: 0.1, y: 1.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1169323202}
@@ -2312,7 +2533,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.5, y: -15}
+  m_AnchoredPosition: {x: -12.5, y: -18.499983}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374057179
@@ -2397,6 +2618,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374057177}
   m_CullTransparentMesh: 1
+--- !u!114 &374057182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374057177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 374057177}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &394940921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -3250,6 +3514,7 @@ GameObject:
   - component: {fileID: 502371929}
   - component: {fileID: 502371931}
   - component: {fileID: 502371930}
+  - component: {fileID: 502371932}
   m_Layer: 5
   m_Name: MenuMR
   m_TagString: Untagged
@@ -3320,6 +3585,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502371928}
   m_CullTransparentMesh: 1
+--- !u!114 &502371932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502371928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1001 &502972417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3729,6 +4037,182 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f738f154b52d84ba40e36437fb4e5a, type: 3}
+--- !u!1 &544671802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544671803}
+  - component: {fileID: 544671806}
+  - component: {fileID: 544671805}
+  - component: {fileID: 544671804}
+  - component: {fileID: 544671807}
+  m_Layer: 5
+  m_Name: BotonInicio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &544671803
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544671802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1709991485}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &544671804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544671802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 544671805}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 544671802}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &544671805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544671802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 43a7d98bd4222b64e933596512dc09ad, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &544671806
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544671802}
+  m_CullTransparentMesh: 1
+--- !u!114 &544671807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 544671802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 544671802}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &553856252 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fb6f7953abafd1b46859c2da70ba8cc5,
@@ -4002,6 +4486,7 @@ GameObject:
   - component: {fileID: 594605527}
   - component: {fileID: 594605526}
   - component: {fileID: 594605525}
+  - component: {fileID: 594605528}
   m_Layer: 5
   m_Name: Aleatorio
   m_TagString: Untagged
@@ -4018,7 +4503,7 @@ RectTransform:
   m_GameObject: {fileID: 594605523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07, y: 2, z: 1}
+  m_LocalScale: {x: 0.07, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2098760074}
@@ -4026,7 +4511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 30}
+  m_AnchoredPosition: {x: 0, y: 30.000036}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &594605525
@@ -4111,6 +4596,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594605523}
   m_CullTransparentMesh: 1
+--- !u!114 &594605528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594605523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 594605523}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1001 &598258759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4195,6 +4723,7 @@ GameObject:
   - component: {fileID: 630168691}
   - component: {fileID: 630168693}
   - component: {fileID: 630168692}
+  - component: {fileID: 630168694}
   m_Layer: 5
   m_Name: MenuM
   m_TagString: Untagged
@@ -4263,6 +4792,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630168690}
   m_CullTransparentMesh: 1
+--- !u!114 &630168694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630168690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &633035423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -5264,6 +5836,7 @@ GameObject:
   - component: {fileID: 858654952}
   - component: {fileID: 858654951}
   - component: {fileID: 858654950}
+  - component: {fileID: 858654953}
   m_Layer: 5
   m_Name: Construcion
   m_TagString: Untagged
@@ -5280,7 +5853,7 @@ RectTransform:
   m_GameObject: {fileID: 858654948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 2, z: 1}
+  m_LocalScale: {x: 0.1, y: 1.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1942798232}
@@ -5288,7 +5861,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -35, y: -15}
+  m_AnchoredPosition: {x: -35, y: -18.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &858654950
@@ -5373,6 +5946,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858654948}
   m_CullTransparentMesh: 1
+--- !u!114 &858654953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858654948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 858654948}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1001 &862463091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5670,6 +6286,7 @@ GameObject:
   - component: {fileID: 876512133}
   - component: {fileID: 876512132}
   - component: {fileID: 876512131}
+  - component: {fileID: 876512134}
   m_Layer: 5
   m_Name: Rotar
   m_TagString: Untagged
@@ -5686,7 +6303,7 @@ RectTransform:
   m_GameObject: {fileID: 876512129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 2, z: 1}
+  m_LocalScale: {x: 0.1, y: 1.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 718923617}
@@ -5694,7 +6311,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.5, y: -15}
+  m_AnchoredPosition: {x: 12.5, y: -18.499983}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876512131
@@ -5779,6 +6396,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876512129}
   m_CullTransparentMesh: 1
+--- !u!114 &876512134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876512129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 876512129}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &876535670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -6329,9 +6989,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BotonInicio: {fileID: 2105852226}
+  BotonInicio: {fileID: 544671802}
   EditorEscena: {fileID: 1709991484}
   MenuObjetos: {fileID: 2059180210}
+  MaquinasRecreativas: {fileID: 1635481611}
+  Personas: {fileID: 274214363}
+  MaquinaVendedoras: {fileID: 289328296}
+  Muebles: {fileID: 204074355}
+  Aleatorio: {fileID: 594605523}
   MenuMR: {fileID: 502371928}
   MenuP: {fileID: 1796514320}
   MenuMV: {fileID: 371128550}
@@ -8415,6 +9080,7 @@ GameObject:
   - component: {fileID: 1635481615}
   - component: {fileID: 1635481614}
   - component: {fileID: 1635481613}
+  - component: {fileID: 1635481616}
   m_Layer: 5
   m_Name: MaquinasRecreativas
   m_TagString: Untagged
@@ -8431,7 +9097,7 @@ RectTransform:
   m_GameObject: {fileID: 1635481611}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.07, y: 2, z: 1}
+  m_LocalScale: {x: 0.07, y: 1.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 113754104}
@@ -8524,6 +9190,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635481611}
   m_CullTransparentMesh: 1
+--- !u!114 &1635481616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635481611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 1635481611}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1 &1651517874
 GameObject:
   m_ObjectHideFlags: 0
@@ -9058,6 +9767,7 @@ GameObject:
   - component: {fileID: 1709991485}
   - component: {fileID: 1709991487}
   - component: {fileID: 1709991486}
+  - component: {fileID: 1709991488}
   m_Layer: 5
   m_Name: EditorEscena
   m_TagString: Untagged
@@ -9077,6 +9787,7 @@ RectTransform:
   m_LocalScale: {x: 10, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 544671803}
   - {fileID: 858654949}
   - {fileID: 374057178}
   - {fileID: 876512130}
@@ -9101,7 +9812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.77647066, g: 0.9725491, b: 1, a: 0.3137255}
+  m_Color: {r: 0.77647066, g: 0.9725491, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9126,6 +9837,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709991484}
   m_CullTransparentMesh: 1
+--- !u!114 &1709991488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709991484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &1750479410 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -9345,6 +10099,7 @@ GameObject:
   - component: {fileID: 1796514321}
   - component: {fileID: 1796514323}
   - component: {fileID: 1796514322}
+  - component: {fileID: 1796514324}
   m_Layer: 5
   m_Name: MenuP
   m_TagString: Untagged
@@ -9411,6 +10166,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796514320}
   m_CullTransparentMesh: 1
+--- !u!114 &1796514324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796514320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &1799172465 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -9490,140 +10288,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f738f154b52d84ba40e36437fb4e5a, type: 3}
---- !u!1 &1835779132
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1835779133}
-  - component: {fileID: 1835779135}
-  - component: {fileID: 1835779134}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1835779133
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835779132}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2105852227}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 50}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1835779134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835779132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Preciona para Jugar
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 97690656
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 34
-  m_fontSizeBase: 34
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -332.60208, y: 0, z: -347.3472, w: -4.2563877}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1835779135
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835779132}
-  m_CullTransparentMesh: 1
 --- !u!1001 &1840275045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10704,13 +11368,14 @@ GameObject:
   - component: {fileID: 2059180211}
   - component: {fileID: 2059180213}
   - component: {fileID: 2059180212}
+  - component: {fileID: 2059180214}
   m_Layer: 5
   m_Name: MenuObjetos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2059180211
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10720,19 +11385,19 @@ RectTransform:
   m_GameObject: {fileID: 2059180210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 15, y: 1.5, z: 1}
+  m_LocalScale: {x: 15, y: 1.6875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1635481612}
   - {fileID: 274214364}
+  - {fileID: 594605524}
   - {fileID: 289328297}
   - {fileID: 204074356}
-  - {fileID: 594605524}
   m_Father: {fileID: 2104857058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -110}
+  m_AnchoredPosition: {x: 0, y: -111.44}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2059180212
@@ -10748,14 +11413,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.77647066, g: 0.9725491, b: 1, a: 0.3137255}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 43a7d98bd4222b64e933596512dc09ad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10773,6 +11438,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059180210}
   m_CullTransparentMesh: 1
+--- !u!114 &2059180214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059180210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 2059180210}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Gambling: {fileID: 0}
+  Pintaball: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1001 &2063592085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11381,6 +12089,7 @@ GameObject:
   - component: {fileID: 2104857057}
   - component: {fileID: 2104857056}
   - component: {fileID: 2104857055}
+  - component: {fileID: 2104857059}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -11469,7 +12178,6 @@ RectTransform:
   - {fileID: 1796514321}
   - {fileID: 371128551}
   - {fileID: 630168691}
-  - {fileID: 2105852227}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11477,155 +12185,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &2105852226
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2105852227}
-  - component: {fileID: 2105852230}
-  - component: {fileID: 2105852229}
-  - component: {fileID: 2105852228}
-  - component: {fileID: 2105852231}
-  m_Layer: 5
-  m_Name: Boton Inicio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2105852227
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105852226}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 5, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1835779133}
-  m_Father: {fileID: 2104857058}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2105852228
+--- !u!114 &2104857059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105852226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 2105852229}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2105852226}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2105852229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105852226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ba0ffd55bf2e0a439f1fc2da1f9cf89, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2105852230
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105852226}
-  m_CullTransparentMesh: 1
---- !u!114 &2105852231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2105852226}
+  m_GameObject: {fileID: 2104857054}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BotonInicio: {fileID: 2105852226}
+  BotonInicio: {fileID: 0}
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}

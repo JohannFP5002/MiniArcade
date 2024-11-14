@@ -13,6 +13,8 @@ public class ControladorJuego : MonoBehaviour
     [SerializeField]
     GameObject MenuObjetos;
     [SerializeField]
+    GameObject MaquinasRecreativas, Personas, MaquinaVendedoras, Muebles, Aleatorio;
+    [SerializeField]
     GameObject MenuMR, MenuP, MenuMV, MenuM;
     [SerializeField]
     GameObject Contruccion, Mover, Rotar, Eliminar;
@@ -28,50 +30,70 @@ public class ControladorJuego : MonoBehaviour
 
     void Start()
     {
-        BotonInicio.SetActive(true);
-        EditorEscena.SetActive(false);
+        MenuObjetos.SetActive(false);
     }
 
     
     void Update()
     {
         Play();
+        Construcion();
+        MaquinaRecreativa();
+        Persona();
+        AccionAleatorio();
+        MaquinasVendedoras();
+        Mobiliario();
+        Movimiento();
+        Rotacion();
+        borrar();
     }
 
     private void Play()
     {
-        if (BotonInicio == false)
+        if (BotonInicio.activeSelf)
         {
             EditorEscena.SetActive(true);
             
         }
     }
-    private void Construcion()
+    public void Construcion()
     {
-        if(Contruccion == false)
+        if (Contruccion.activeSelf)
         {
             MenuObjetos.SetActive(true);
         }
     }
     private void MaquinaRecreativa()
     {
-
+        if (MaquinasRecreativas.activeSelf)
+        {
+            MenuMR.SetActive(true);
+        }
     }
     private void Persona() 
     {
-
+        if (Personas.activeSelf)
+        {
+            MenuP.SetActive(true);
+        }
     }
-    private void Aleatorio()
+    private void AccionAleatorio()
     {
-
+        
     }
     private void MaquinasVendedoras()
     {
-
+        if (MaquinaVendedoras.activeSelf)
+        {
+            MenuMV.SetActive(true);
+        }
     }
-    private void Muebles()
+    private void Mobiliario()
     {
-
+        if (Muebles.activeSelf)
+        {
+            MenuM.SetActive(true);
+        }
     }
     private void Movimiento()
     {
