@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
-using TMPro;
-using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class ControladorJuego : MonoBehaviour
 {
+    
+    [SerializeField]
+    float timeanim;
+    [SerializeField]
+    LeanTweenType animCurve;
     [SerializeField]
     GameObject BotonInicio;
+    [SerializeField]
+    float PosicionFinal = 50f;
     [SerializeField]
     GameObject EditorEscena;
     [SerializeField]
@@ -19,92 +26,56 @@ public class ControladorJuego : MonoBehaviour
     [SerializeField]
     GameObject Contruccion, Mover, Rotar, Eliminar;
     [SerializeField]
-    GameObject AirHock, ArcadeMachine, Basketball, DanceMachine, Gambling, Pintaball;
+    GameObject AirHock, ArcadeMachine, Basketball, DanceMachine;
     [SerializeField]
     GameObject Chica, Chico;
     [SerializeField]
     GameObject TicketMachine, VendingMachine, ClawMachine;
     [SerializeField]
     GameObject CashRegister, Prizes, PrizeWheel, Column;
-    
+    bool Inicio = false;
+    bool PopConstruccion = false;
+    bool PopMovimiento = false;
+    bool PopRotacion = false;
+    bool PopEliminar = false;
+
 
     void Start()
     {
-        MenuObjetos.SetActive(false);
+        
     }
 
-    
+
     void Update()
-    {
-        Play();
-        Construcion();
-        MaquinaRecreativa();
-        Persona();
-        AccionAleatorio();
-        MaquinasVendedoras();
-        Mobiliario();
-        Movimiento();
-        Rotacion();
-        borrar();
-    }
-
-    private void Play()
-    {
-        if (BotonInicio.activeSelf)
-        {
-            EditorEscena.SetActive(true);
-            
-        }
-    }
-    public void Construcion()
-    {
-        if (Contruccion.activeSelf)
-        {
-            MenuObjetos.SetActive(true);
-        }
-    }
-    private void MaquinaRecreativa()
-    {
-        if (MaquinasRecreativas.activeSelf)
-        {
-            MenuMR.SetActive(true);
-        }
-    }
-    private void Persona() 
-    {
-        if (Personas.activeSelf)
-        {
-            MenuP.SetActive(true);
-        }
-    }
-    private void AccionAleatorio()
     {
         
     }
-    private void MaquinasVendedoras()
+    public void MenuInicio()
     {
-        if (MaquinaVendedoras.activeSelf)
+        Inicio = !Inicio;
+        if (Inicio)
         {
-            MenuMV.SetActive(true);
+            LeanTween.moveLocalY(EditorEscena, PosicionFinal, timeanim).setEase(animCurve);
         }
+        
     }
-    private void Mobiliario()
+
+    private void PopupConstruccion() 
     {
-        if (Muebles.activeSelf)
-        {
-            MenuM.SetActive(true);
-        }
+        PopConstruccion = !PopConstruccion;
+       
     }
-    private void Movimiento()
+    private void PopupMovimiento()
+    {
+        
+    }
+    private void PopupRotacion()
+    {
+        
+    }
+    private void PopupEliminar()
     {
 
     }
-    private void Rotacion()
-    {
-
-    }
-    private void borrar()
-    {
-
-    }
+   
 }
