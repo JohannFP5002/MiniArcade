@@ -21,7 +21,6 @@ public class ControladorJuego : MonoBehaviour
     public GameObject Objeto11;
     public GameObject Objeto12;
     public GameObject Objeto13;
-
     [SerializeField]
     float timeanim;
     [SerializeField]
@@ -60,14 +59,6 @@ public class ControladorJuego : MonoBehaviour
     bool BotonesObjetos = false;
     private bool MovimientoObjetos = false;
     private GameObject SelectObject;
-    
-
-
-    void Start()
-    {
-  
-    }
-
 
     void Update()
     {
