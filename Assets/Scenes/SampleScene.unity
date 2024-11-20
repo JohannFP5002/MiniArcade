@@ -200,8 +200,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -286,6 +286,7 @@ GameObject:
   - component: {fileID: 22225669}
   - component: {fileID: 22225668}
   - component: {fileID: 22225667}
+  - component: {fileID: 22225670}
   m_Layer: 5
   m_Name: Column
   m_TagString: Untagged
@@ -356,7 +357,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 22225668}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 22225670}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 22225670}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: Columns
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &22225668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +420,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22225665}
   m_CullTransparentMesh: 1
+--- !u!114 &22225670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22225665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 1306305157746501162, guid: 216ec009230b11241bd9b21ed556f4bc,
+    type: 3}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1001 &47647368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -553,6 +638,7 @@ GameObject:
   - component: {fileID: 66619048}
   - component: {fileID: 66619047}
   - component: {fileID: 66619046}
+  - component: {fileID: 66619049}
   m_Layer: 5
   m_Name: Chica
   m_TagString: Untagged
@@ -623,7 +709,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 66619047}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 66619049}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 66619049}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: Chicas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &66619047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -662,6 +772,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66619044}
   m_CullTransparentMesh: 1
+--- !u!114 &66619049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66619044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 6138606809307156000, guid: 53d782a5284b7b245980238a8a7f2458, type: 3}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1 &66797717
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,13 +842,14 @@ GameObject:
   - component: {fileID: 66797718}
   - component: {fileID: 66797720}
   - component: {fileID: 66797719}
+  - component: {fileID: 66797721}
   m_Layer: 5
   m_Name: MensajeMover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &66797718
 RectTransform:
   m_ObjectHideFlags: 0
@@ -689,14 +859,15 @@ RectTransform:
   m_GameObject: {fileID: 66797717}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.955548, y: 1.9167, z: 1}
+  m_LocalScale: {x: 3.968662, y: 1.9167, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2055173992}
   m_Father: {fileID: 2104857058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -638}
+  m_AnchoredPosition: {x: -709, y: -685}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &66797719
@@ -737,6 +908,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66797717}
   m_CullTransparentMesh: 1
+--- !u!114 &66797721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66797717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 0
+  animCurve: 0
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &101437016 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -1016,7 +1246,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1207549026}
   m_SourcePrefab: {fileID: 100100000, guid: fb6f7953abafd1b46859c2da70ba8cc5, type: 3}
 --- !u!4 &142728894 stripped
 Transform:
@@ -1029,6 +1263,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
     type: 3}
   m_PrefabInstance: {fileID: 1582798585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &196696184 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 52a3164bfbf5b3c4f9df130290b491ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1004606503}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &204074355
 GameObject:
@@ -1113,7 +1353,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 204074358}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 204074360}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: Cosos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &204074358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1164,21 +1416,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 204074355}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
-  MenuM: {fileID: 0}
+  MenuM: {fileID: 630168690}
   Contruccion: {fileID: 0}
   Mover: {fileID: 0}
   Rotar: {fileID: 0}
@@ -1278,6 +1545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 234637162}
+  - component: {fileID: 234637163}
   m_Layer: 0
   m_Name: Muros
   m_TagString: Untagged
@@ -1309,6 +1577,39 @@ Transform:
   - {fileID: 490939673}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &234637163
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234637161}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &243417306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2019102935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &250716335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,8 +1676,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1458,6 +1759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 265685878}
+  - component: {fileID: 265685879}
   m_Layer: 0
   m_Name: Puertas
   m_TagString: Untagged
@@ -1481,6 +1783,33 @@ Transform:
   - {fileID: 1520828135}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &265685879
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265685877}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &274214363
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1893,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 274214366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 274214368}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: Seres
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &274214366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1615,19 +1956,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 27
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 274214363}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
-  MenuP: {fileID: 0}
+  MenuP: {fileID: 1796514320}
   MenuMV: {fileID: 0}
   MenuM: {fileID: 0}
   Contruccion: {fileID: 0}
@@ -1731,7 +2087,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 282623571}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 282623573}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: PopupEliminar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 282623573}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: BorrarObjeto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &282623571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1782,17 +2162,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 27
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -1897,7 +2292,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 289328299}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 289328301}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: MaquinasV
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &289328299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1948,17 +2355,168 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 289328296}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
+--- !u!1 &326283012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326283013}
+  - component: {fileID: 326283015}
+  - component: {fileID: 326283014}
+  - component: {fileID: 326283016}
+  m_Layer: 5
+  m_Name: MensajeConstruccion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &326283013
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326283012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.968662, y: 1.9167, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1168955489}
+  m_Father: {fileID: 2104857058}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -709, y: -635}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &326283014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326283012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 90a2dde0942123c4ebb9c4af580c5818, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &326283015
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326283012}
+  m_CullTransparentMesh: 1
+--- !u!114 &326283016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326283012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 0
+  animCurve: 0
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -2183,7 +2741,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1676500717}
   m_SourcePrefab: {fileID: 100100000, guid: fb6f7953abafd1b46859c2da70ba8cc5, type: 3}
 --- !u!1 &349709844
 GameObject:
@@ -2251,8 +2813,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2337,7 +2899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &371128551
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2357,7 +2919,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 265, y: 880}
+  m_AnchoredPosition: {x: 265, y: 1034}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371128552
@@ -2410,17 +2972,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 371128550}
@@ -2525,7 +3102,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 374057180}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 374057182}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: PopupMovimiento
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 374057182}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: MovimientoObjeto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &374057180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2576,17 +3177,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 27
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -2812,6 +3428,7 @@ GameObject:
   - component: {fileID: 410780585}
   - component: {fileID: 410780584}
   - component: {fileID: 410780583}
+  - component: {fileID: 410780586}
   m_Layer: 5
   m_Name: Chico
   m_TagString: Untagged
@@ -2882,7 +3499,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 410780584}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 410780586}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 410780586}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: Chicos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &410780584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2921,6 +3562,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410780581}
   m_CullTransparentMesh: 1
+--- !u!114 &410780586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410780581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 7020469843699412892, guid: 1d3db3e0504e90649bb9f0a0e0cb80a5, type: 3}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1001 &417567764
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3382,8 +4082,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3468,7 +4168,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &502371929
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3489,7 +4189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -530, y: 880}
+  m_AnchoredPosition: {x: -530, y: 1029}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502371930
@@ -3542,17 +4242,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 502371928}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -3640,7 +4355,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 791745863}
   m_SourcePrefab: {fileID: 100100000, guid: fb6f7953abafd1b46859c2da70ba8cc5, type: 3}
 --- !u!1 &503053250
 GameObject:
@@ -3842,8 +4561,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4019,7 +4738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544671804
@@ -4128,17 +4847,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 5
-  animCurve: 1
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 26
   BotonInicio: {fileID: 544671802}
-  PosicionFinal: 100
   EditorEscena: {fileID: 1709991484}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -4178,6 +4912,7 @@ GameObject:
   - component: {fileID: 560686521}
   - component: {fileID: 560686520}
   - component: {fileID: 560686519}
+  - component: {fileID: 560686522}
   m_Layer: 5
   m_Name: TicketMachine
   m_TagString: Untagged
@@ -4248,7 +4983,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 560686520}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 560686522}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 560686522}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: TicketMachines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &560686520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4287,6 +5046,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560686517}
   m_CullTransparentMesh: 1
+--- !u!114 &560686522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560686517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 2858440399091494705, guid: 95441ae00943ce24bb2008f8f5294a60, type: 3}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1 &589280556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4353,8 +5171,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4292532954
+  m_fontColor: {r: 0.8553459, g: 0.8553459, b: 0.8553459, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4512,7 +5330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &630168691
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4533,7 +5351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 530, y: 880}
+  m_AnchoredPosition: {x: 530, y: 1038}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &630168692
@@ -4586,17 +5404,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -4763,8 +5596,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4860,7 +5693,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 772380670}
   - {fileID: 424089391}
   - {fileID: 1412502471}
   - {fileID: 1174422332}
@@ -4897,6 +5729,7 @@ Transform:
   - {fileID: 1145925601}
   - {fileID: 1492238075}
   - {fileID: 438775822}
+  - {fileID: 1161933847}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &718923616
@@ -5033,6 +5866,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718923616}
   m_CullTransparentMesh: 1
+--- !u!1 &724304832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2076176599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &724304833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724304832}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &727405771
 GameObject:
   m_ObjectHideFlags: 0
@@ -5173,47 +6033,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 862463091}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &772380669
+--- !u!1 &766781677 stripped
 GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1651872390}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &766781678
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 772380670}
-  - component: {fileID: 772380673}
-  - component: {fileID: 772380672}
-  - component: {fileID: 772380671}
-  m_Layer: 0
-  m_Name: Plane
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &772380670
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772380669}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 4.7822337, z: 2.5}
-  m_LocalScale: {x: 0.7, y: 1, z: 0.65}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 661364428}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &772380671
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772380669}
+  m_GameObject: {fileID: 766781677}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5225,60 +6057,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &772380672
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772380669}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &772380673
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772380669}
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &777660142 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -5291,6 +6072,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 332330315}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &791745862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 502972417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &791745863
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791745862}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &800973393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -5302,6 +6110,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
     type: 3}
   m_PrefabInstance: {fileID: 440831050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &829088797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8526fee36f13646449200f4ec967a876,
+    type: 3}
+  m_PrefabInstance: {fileID: 1367798973}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
@@ -5364,6 +6178,7 @@ GameObject:
   - component: {fileID: 837717588}
   - component: {fileID: 837717587}
   - component: {fileID: 837717586}
+  - component: {fileID: 837717589}
   m_Layer: 5
   m_Name: VendingMachine
   m_TagString: Untagged
@@ -5434,7 +6249,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 837717587}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 837717589}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 837717589}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: VendingMachines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &837717587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5473,6 +6312,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837717584}
   m_CullTransparentMesh: 1
+--- !u!114 &837717589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 837717584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 7133394557751403182, guid: f23b4412046f6414d88bc0f3805179cd, type: 3}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1 &858654948
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,7 +6454,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 858654951}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 858654953}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: PopupConstruccion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &858654951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5607,17 +6517,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 26
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
-  MenuObjetos: {fileID: 0}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -5715,7 +6640,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e492a08a5ea6964bbbedb0259b0b48d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1281778244}
   m_SourcePrefab: {fileID: 100100000, guid: 7e492a08a5ea6964bbbedb0259b0b48d, type: 3}
 --- !u!1 &869971318
 GameObject:
@@ -5783,8 +6712,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6007,7 +6936,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 876512132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 876512134}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: PopupRotacion
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 876512134}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: RotacionObjeto
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &876512132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6058,17 +7011,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 27
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -6312,7 +7280,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e492a08a5ea6964bbbedb0259b0b48d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1309068727}
   m_SourcePrefab: {fileID: 100100000, guid: 7e492a08a5ea6964bbbedb0259b0b48d, type: 3}
 --- !u!4 &940520923 stripped
 Transform:
@@ -6404,13 +7376,14 @@ GameObject:
   - component: {fileID: 971025561}
   - component: {fileID: 971025563}
   - component: {fileID: 971025562}
+  - component: {fileID: 971025564}
   m_Layer: 5
   m_Name: MensajeRotar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &971025561
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6420,14 +7393,15 @@ RectTransform:
   m_GameObject: {fileID: 971025560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.955548, y: 1.9167, z: 1}
+  m_LocalScale: {x: 3.968662, y: 1.9167, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1534484422}
   m_Father: {fileID: 2104857058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -638}
+  m_AnchoredPosition: {x: -709, y: -735}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971025562
@@ -6468,6 +7442,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971025560}
   m_CullTransparentMesh: 1
+--- !u!114 &971025564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971025560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 0
+  animCurve: 0
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 0}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!4 &990997240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -6540,7 +7573,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 52a3164bfbf5b3c4f9df130290b491ae,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1520828136}
   m_SourcePrefab: {fileID: 100100000, guid: 52a3164bfbf5b3c4f9df130290b491ae, type: 3}
 --- !u!4 &1034911903 stripped
 Transform:
@@ -6645,7 +7682,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8526fee36f13646449200f4ec967a876,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1087960424}
   m_SourcePrefab: {fileID: 100100000, guid: 8526fee36f13646449200f4ec967a876, type: 3}
 --- !u!4 &1047295371 stripped
 Transform:
@@ -6659,6 +7700,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1180876760}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1087960423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8526fee36f13646449200f4ec967a876,
+    type: 3}
+  m_PrefabInstance: {fileID: 1042994795}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1087960424
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087960423}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1116890579 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -6715,17 +7783,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 741357125960306257, guid: 6ca5e96cc82db5a4d9ad8c9be6c8b674, type: 3}
+  Objeto2: {fileID: 3956023430908979459, guid: 5d191cadd49476c44a2e54525ee1029a, type: 3}
+  Objeto3: {fileID: 2729650364681967569, guid: 41ebeec6865df1e4799f55006d4e71a2, type: 3}
+  Objeto4: {fileID: 5123087968030864236, guid: 6496df51fe32e2648b72d8abf5846674, type: 3}
+  Objeto5: {fileID: 6138606809307156000, guid: 53d782a5284b7b245980238a8a7f2458, type: 3}
+  Objeto6: {fileID: 7020469843699412892, guid: 1d3db3e0504e90649bb9f0a0e0cb80a5, type: 3}
+  Objeto7: {fileID: 2858440399091494705, guid: 95441ae00943ce24bb2008f8f5294a60, type: 3}
+  Objeto8: {fileID: 7133394557751403182, guid: f23b4412046f6414d88bc0f3805179cd, type: 3}
+  Objeto9: {fileID: 3718393723918101402, guid: 33654cd71659d1e4da5799df0b621778, type: 3}
+  Objeto10: {fileID: 5123087968030864236, guid: 6496df51fe32e2648b72d8abf5846674,
+    type: 3}
+  Objeto11: {fileID: 1892161922711350528, guid: 17dced4b2bacc964dbdc6c865be8a21c,
+    type: 3}
+  Objeto12: {fileID: 1554972373670504913, guid: 2f778731baed8484c943a651356a0e4c,
+    type: 3}
+  Objeto13: {fileID: 1306305157746501162, guid: 216ec009230b11241bd9b21ed556f4bc,
+    type: 3}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 544671802}
-  PosicionFinal: 100
   EditorEscena: {fileID: 1709991484}
   MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
   MaquinasRecreativas: {fileID: 1635481611}
   Personas: {fileID: 274214363}
   MaquinaVendedoras: {fileID: 289328296}
   Muebles: {fileID: 204074355}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 502371928}
   MenuP: {fileID: 1796514320}
   MenuMV: {fileID: 371128550}
@@ -6753,6 +7840,59 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2142231200}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1161933846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161933847}
+  - component: {fileID: 1161933848}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &1161933847
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161933846}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 661364428}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1161933848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161933846}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 13.26, y: 1, z: 18.68}
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!1 &1166062229
 GameObject:
   m_ObjectHideFlags: 0
@@ -6765,6 +7905,7 @@ GameObject:
   - component: {fileID: 1166062233}
   - component: {fileID: 1166062232}
   - component: {fileID: 1166062231}
+  - component: {fileID: 1166062234}
   m_Layer: 5
   m_Name: Bastketball
   m_TagString: Untagged
@@ -6835,7 +7976,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1166062232}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1166062234}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1166062234}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: BasketBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1166062232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6873,6 +8038,199 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166062229}
+  m_CullTransparentMesh: 1
+--- !u!114 &1166062234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166062229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 2729650364681967569, guid: 41ebeec6865df1e4799f55006d4e71a2, type: 3}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
+--- !u!1 &1168955488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1168955489}
+  - component: {fileID: 1168955491}
+  - component: {fileID: 1168955490}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1168955489
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168955488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 326283013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1168955490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168955488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Seleciona \nel Objeto \nen los menus"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 50.30911, y: -16.026815, z: 49.958466, w: -24.766542}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1168955491
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168955488}
   m_CullTransparentMesh: 1
 --- !u!1 &1169323201
 GameObject:
@@ -7095,6 +8453,33 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 112747939}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1207549025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 133631510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1207549026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207549025}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1208492889 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -7332,6 +8717,33 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f738f154b52d84ba40e36437fb4e5a, type: 3}
+--- !u!1 &1281778243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e492a08a5ea6964bbbedb0259b0b48d,
+    type: 3}
+  m_PrefabInstance: {fileID: 862463091}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1281778244
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1281778243}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1286177204
 GameObject:
   m_ObjectHideFlags: 0
@@ -7466,6 +8878,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286177204}
   m_CullTransparentMesh: 1
+--- !u!1 &1309068726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e492a08a5ea6964bbbedb0259b0b48d,
+    type: 3}
+  m_PrefabInstance: {fileID: 936723222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1309068727
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309068726}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1313447627 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -7478,6 +8917,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1367798973}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1348577484
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 829088797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1360796085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7617,7 +9077,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8526fee36f13646449200f4ec967a876,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348577484}
   m_SourcePrefab: {fileID: 100100000, guid: 8526fee36f13646449200f4ec967a876, type: 3}
 --- !u!1001 &1388194083
 PrefabInstance:
@@ -7768,7 +9232,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e492a08a5ea6964bbbedb0259b0b48d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1577437272}
   m_SourcePrefab: {fileID: 100100000, guid: 7e492a08a5ea6964bbbedb0259b0b48d, type: 3}
 --- !u!1 &1405577339
 GameObject:
@@ -7836,8 +9304,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8220,6 +9688,7 @@ GameObject:
   - component: {fileID: 1515596405}
   - component: {fileID: 1515596404}
   - component: {fileID: 1515596403}
+  - component: {fileID: 1515596406}
   m_Layer: 5
   m_Name: DanceMachine
   m_TagString: Untagged
@@ -8290,7 +9759,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1515596404}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1515596406}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1515596406}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: DanceMachines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1515596404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8329,12 +9822,226 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1515596401}
   m_CullTransparentMesh: 1
+--- !u!114 &1515596406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515596401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 8466644227904671997, guid: fcf7881a6f16f6b4183a45af4133ec7f, type: 3}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!4 &1520828135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52a3164bfbf5b3c4f9df130290b491ae,
     type: 3}
   m_PrefabInstance: {fileID: 1004606503}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1520828136
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196696184}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1534484421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534484422}
+  - component: {fileID: 1534484424}
+  - component: {fileID: 1534484423}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1534484422
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534484421}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 971025561}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035156, y: -10.7}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1534484423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534484421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Haz Click en el boton Rotar
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 50.30911, y: -16.026815, z: 49.958466, w: -24.766542}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1534484424
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534484421}
+  m_CullTransparentMesh: 1
 --- !u!1 &1541182739
 GameObject:
   m_ObjectHideFlags: 0
@@ -8344,6 +10051,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1541182740}
+  - component: {fileID: 1541182741}
   m_Layer: 0
   m_Name: Ventanas
   m_TagString: Untagged
@@ -8369,6 +10077,60 @@ Transform:
   - {fileID: 3986918}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1541182741
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541182739}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &1577437271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7e492a08a5ea6964bbbedb0259b0b48d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1398112410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1577437272
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577437271}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1582798585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8727,8 +10489,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8878,7 +10640,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1635481614}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1635481616}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: MaquinasR
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1635481614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8929,18 +10703,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeanim: 0
-  animCurve: 0
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 27
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 1635481611}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
-  MenuMR: {fileID: 0}
+  MenuMR: {fileID: 502371928}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
   MenuM: {fileID: 0}
@@ -8973,6 +10762,7 @@ GameObject:
   - component: {fileID: 1651517878}
   - component: {fileID: 1651517877}
   - component: {fileID: 1651517876}
+  - component: {fileID: 1651517879}
   m_Layer: 5
   m_Name: PrizeWheel
   m_TagString: Untagged
@@ -9043,7 +10833,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1651517877}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1651517879}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1651517879}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: PrizeWheels
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1651517877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9082,6 +10896,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651517874}
   m_CullTransparentMesh: 1
+--- !u!114 &1651517879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651517874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 1554972373670504913, guid: 2f778731baed8484c943a651356a0e4c,
+    type: 3}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1001 &1651872390
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9148,7 +11022,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 766781678}
   m_SourcePrefab: {fileID: 100100000, guid: fb6f7953abafd1b46859c2da70ba8cc5, type: 3}
 --- !u!1 &1656789970
 GameObject:
@@ -9216,8 +11094,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9302,6 +11180,7 @@ GameObject:
   - component: {fileID: 1665908676}
   - component: {fileID: 1665908675}
   - component: {fileID: 1665908674}
+  - component: {fileID: 1665908677}
   m_Layer: 5
   m_Name: AirHockey
   m_TagString: Untagged
@@ -9372,7 +11251,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1665908675}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1665908677}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1665908677}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: AirHockey
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1665908675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9411,6 +11314,92 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665908672}
   m_CullTransparentMesh: 1
+--- !u!114 &1665908677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665908672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 741357125960306257, guid: 6ca5e96cc82db5a4d9ad8c9be6c8b674, type: 3}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
+--- !u!1 &1676500716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+    type: 3}
+  m_PrefabInstance: {fileID: 332330315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1676500717
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676500716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1703305268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9577,17 +11566,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 1709991484}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -9681,7 +11685,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8526fee36f13646449200f4ec967a876,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1956615336}
   m_SourcePrefab: {fileID: 100100000, guid: 8526fee36f13646449200f4ec967a876, type: 3}
 --- !u!1 &1759241013
 GameObject:
@@ -9749,8 +11757,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9835,7 +11843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1796514321
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9854,7 +11862,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -265, y: 880}
+  m_AnchoredPosition: {x: -265, y: 1025}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1796514322
@@ -9907,17 +11915,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 1796514320}
   MenuMV: {fileID: 0}
@@ -10029,13 +12052,14 @@ GameObject:
   - component: {fileID: 1807462363}
   - component: {fileID: 1807462365}
   - component: {fileID: 1807462364}
+  - component: {fileID: 1807462366}
   m_Layer: 5
   m_Name: MensajeEliminar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1807462363
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10045,14 +12069,15 @@ RectTransform:
   m_GameObject: {fileID: 1807462362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9.955548, y: 1.9167, z: 1}
+  m_LocalScale: {x: 3.968662, y: 1.9167, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1843246156}
   m_Father: {fileID: 2104857058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -638}
+  m_AnchoredPosition: {x: -709, y: -785}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1807462364
@@ -10093,6 +12118,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807462362}
   m_CullTransparentMesh: 1
+--- !u!114 &1807462366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807462362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 0
+  animCurve: 0
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 0}
+  MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 0}
+  MenuP: {fileID: 0}
+  MenuMV: {fileID: 0}
+  MenuM: {fileID: 0}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 0}
+  ArcadeMachine: {fileID: 0}
+  Basketball: {fileID: 0}
+  DanceMachine: {fileID: 0}
+  Chica: {fileID: 0}
+  Chico: {fileID: 0}
+  TicketMachine: {fileID: 0}
+  VendingMachine: {fileID: 0}
+  ClawMachine: {fileID: 0}
+  CashRegister: {fileID: 0}
+  Prizes: {fileID: 0}
+  PrizeWheel: {fileID: 0}
+  Column: {fileID: 0}
 --- !u!1001 &1840275045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10166,6 +12250,140 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71f738f154b52d84ba40e36437fb4e5a, type: 3}
+--- !u!1 &1843246155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843246156}
+  - component: {fileID: 1843246158}
+  - component: {fileID: 1843246157}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1843246156
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843246155}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1807462363}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035156, y: -9.2}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1843246157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843246155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Presiona el boton eliminar
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 50.30911, y: -16.026815, z: 49.958466, w: -24.766542}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1843246158
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843246155}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1856430026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10245,6 +12463,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2019102935}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1889723456
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243417306}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1890884819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10525,6 +12764,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942798231}
   m_CullTransparentMesh: 1
+--- !u!1 &1956615335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8526fee36f13646449200f4ec967a876,
+    type: 3}
+  m_PrefabInstance: {fileID: 1757618482}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1956615336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956615335}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1960679783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -10543,6 +12809,8 @@ GameObject:
   - component: {fileID: 1981990270}
   - component: {fileID: 1981990269}
   - component: {fileID: 1981990268}
+  - component: {fileID: 1981990272}
+  - component: {fileID: 1981990271}
   m_Layer: 5
   m_Name: ArcadeMachine
   m_TagString: Untagged
@@ -10613,7 +12881,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1981990269}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1981990271}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1981990272}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: ArcadeMachines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1981990269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10652,6 +12944,124 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981990266}
   m_CullTransparentMesh: 1
+--- !u!114 &1981990271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981990266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
+--- !u!114 &1981990272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981990266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 3956023430908979459, guid: 5d191cadd49476c44a2e54525ee1029a, type: 3}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!4 &2014268061 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 71f738f154b52d84ba40e36437fb4e5a,
@@ -10670,6 +13080,7 @@ GameObject:
   - component: {fileID: 2015361504}
   - component: {fileID: 2015361503}
   - component: {fileID: 2015361502}
+  - component: {fileID: 2015361505}
   m_Layer: 5
   m_Name: ClawMachine
   m_TagString: Untagged
@@ -10740,7 +13151,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2015361503}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2015361505}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2015361505}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: ClawMachines
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2015361503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10779,6 +13214,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2015361500}
   m_CullTransparentMesh: 1
+--- !u!114 &2015361505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015361500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 3718393723918101402, guid: 33654cd71659d1e4da5799df0b621778, type: 3}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1001 &2017738213
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10918,7 +13412,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1889723456}
   m_SourcePrefab: {fileID: 100100000, guid: fb6f7953abafd1b46859c2da70ba8cc5, type: 3}
 --- !u!1 &2035578241
 GameObject:
@@ -10932,6 +13430,7 @@ GameObject:
   - component: {fileID: 2035578245}
   - component: {fileID: 2035578244}
   - component: {fileID: 2035578243}
+  - component: {fileID: 2035578246}
   m_Layer: 5
   m_Name: Prizes
   m_TagString: Untagged
@@ -11002,7 +13501,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2035578244}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2035578246}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2035578246}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: Prize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2035578244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11040,6 +13563,200 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2035578241}
+  m_CullTransparentMesh: 1
+--- !u!114 &2035578246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035578241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 1892161922711350528, guid: 17dced4b2bacc964dbdc6c865be8a21c,
+    type: 3}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
+--- !u!1 &2055173991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055173992}
+  - component: {fileID: 2055173994}
+  - component: {fileID: 2055173993}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2055173992
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055173991}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 66797718}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000061035156, y: -3.913025}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2055173993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055173991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Haz click y controla con AWSD
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 18
+  m_fontSizeBase: 18
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 53.215992, y: -16.026815, z: 54.71475, w: -24.766542}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2055173994
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055173991}
   m_CullTransparentMesh: 1
 --- !u!1 &2059180210
 GameObject:
@@ -11080,7 +13797,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 120}
+  m_AnchoredPosition: {x: 0, y: 83}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2059180212
@@ -11133,17 +13850,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -11377,7 +14109,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6f7953abafd1b46859c2da70ba8cc5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 724304833}
   m_SourcePrefab: {fileID: 100100000, guid: fb6f7953abafd1b46859c2da70ba8cc5, type: 3}
 --- !u!4 &2082015780 stripped
 Transform:
@@ -11397,6 +14133,7 @@ GameObject:
   - component: {fileID: 2082314543}
   - component: {fileID: 2082314542}
   - component: {fileID: 2082314541}
+  - component: {fileID: 2082314544}
   m_Layer: 5
   m_Name: CashRegister
   m_TagString: Untagged
@@ -11467,7 +14204,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2082314542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2082314544}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: CierrePopObjetos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2082314544}
+        m_TargetAssemblyTypeName: ControladorJuego, Assembly-CSharp
+        m_MethodName: Cashregister
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2082314542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11506,6 +14267,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082314539}
   m_CullTransparentMesh: 1
+--- !u!114 &2082314544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082314539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 5123087968030864236, guid: 6496df51fe32e2648b72d8abf5846674,
+    type: 3}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
+  timeanim: 1
+  animCurve: 28
+  BotonInicio: {fileID: 0}
+  EditorEscena: {fileID: 1709991484}
+  MenuObjetos: {fileID: 2059180210}
+  MensajeConstruccion: {fileID: 326283012}
+  MensajeMover: {fileID: 66797717}
+  MensajeRotar: {fileID: 971025560}
+  MensajeEliminar: {fileID: 1807462362}
+  MaquinasRecreativas: {fileID: 0}
+  Personas: {fileID: 0}
+  MaquinaVendedoras: {fileID: 0}
+  Muebles: {fileID: 0}
+  MenuMR: {fileID: 502371928}
+  MenuP: {fileID: 1796514320}
+  MenuMV: {fileID: 371128550}
+  MenuM: {fileID: 630168690}
+  Contruccion: {fileID: 0}
+  Mover: {fileID: 0}
+  Rotar: {fileID: 0}
+  Eliminar: {fileID: 0}
+  AirHock: {fileID: 1665908672}
+  ArcadeMachine: {fileID: 1981990266}
+  Basketball: {fileID: 1166062229}
+  DanceMachine: {fileID: 1515596401}
+  Chica: {fileID: 66619044}
+  Chico: {fileID: 410780581}
+  TicketMachine: {fileID: 560686517}
+  VendingMachine: {fileID: 837717584}
+  ClawMachine: {fileID: 2015361500}
+  CashRegister: {fileID: 2082314539}
+  Prizes: {fileID: 2035578241}
+  PrizeWheel: {fileID: 1651517874}
+  Column: {fileID: 22225665}
 --- !u!1 &2104857054
 GameObject:
   m_ObjectHideFlags: 0
@@ -11601,6 +14422,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 326283013}
   - {fileID: 66797718}
   - {fileID: 971025561}
   - {fileID: 1807462363}
@@ -11629,17 +14451,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57cdb7740de3f9d4eaaf39fcf611675d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Objeto1: {fileID: 0}
+  Objeto2: {fileID: 0}
+  Objeto3: {fileID: 0}
+  Objeto4: {fileID: 0}
+  Objeto5: {fileID: 0}
+  Objeto6: {fileID: 0}
+  Objeto7: {fileID: 0}
+  Objeto8: {fileID: 0}
+  Objeto9: {fileID: 0}
+  Objeto10: {fileID: 0}
+  Objeto11: {fileID: 0}
+  Objeto12: {fileID: 0}
+  Objeto13: {fileID: 0}
   timeanim: 0
   animCurve: 0
   BotonInicio: {fileID: 0}
-  PosicionFinal: 100
   EditorEscena: {fileID: 0}
   MenuObjetos: {fileID: 0}
+  MensajeConstruccion: {fileID: 0}
+  MensajeMover: {fileID: 0}
+  MensajeRotar: {fileID: 0}
+  MensajeEliminar: {fileID: 0}
   MaquinasRecreativas: {fileID: 0}
   Personas: {fileID: 0}
   MaquinaVendedoras: {fileID: 0}
   Muebles: {fileID: 0}
-  Aleatorio: {fileID: 0}
   MenuMR: {fileID: 0}
   MenuP: {fileID: 0}
   MenuMV: {fileID: 0}
@@ -11727,8 +14564,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
