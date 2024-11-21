@@ -7,6 +7,10 @@ using TMPro;
 
 public class ControladorJuego : MonoBehaviour
 {
+    [SerializeField]
+    public GameObject CrearSombra;
+    [SerializeField]
+    public GameObject SombraObjeto;
     [Header("Objetos")]
     public GameObject Objeto1;
     public GameObject Objeto2;
@@ -32,7 +36,7 @@ public class ControladorJuego : MonoBehaviour
     [SerializeField]
     GameObject MenuObjetos;
     [SerializeField]
-    GameObject MensajeConstruccion, MensajeMover, MensajeRotar, MensajeEliminar;
+    GameObject MensajeConstruccion, MensajeMover, MensajeRotar, MensajeEliminar, MensajeEscalado;
     [SerializeField]
     GameObject MaquinasRecreativas, Personas, MaquinaVendedoras, Muebles;
     [SerializeField]
@@ -62,6 +66,7 @@ public class ControladorJuego : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -69,31 +74,31 @@ public class ControladorJuego : MonoBehaviour
             {
                 if (hit.transform.CompareTag("Select"))
                 {
-                    // Selecciona el objeto al hacer clic en él
                     SelectObject = hit.transform.gameObject;
-                    Debug.Log("Objeto seleccionado: " + SelectObject.name);
+                    Vector3 posicionInicialSombra = new Vector3(3, 0, 3);
+                    GameObject CrearSombra = Instantiate(SombraObjeto, posicionInicialSombra, Quaternion.identity);
+                    SombraObjeto.transform.parent = SelectObject.transform;
+                    SombraObjeto = transform.gameObject;
                 }
             }
-        }
-
-        // Movimiento del objeto seleccionado si el modo mover está activo
-        if (MovimientoObjetos && SelectObject != null)
-        {
-            if (Input.GetKey(KeyCode.W))
+            if (MovimientoObjetos && SelectObject != null)
             {
-                SelectObject.transform.position += Vector3.back * Time.deltaTime; // Mover hacia adelante (eje Z)
-            }
-            if (Input.GetKey(KeyCode.S))
-            {
-                SelectObject.transform.position += Vector3.forward * Time.deltaTime; // Mover hacia atrás (eje Z)
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                SelectObject.transform.position += Vector3.right * Time.deltaTime; // Mover hacia la izquierda (eje X)
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                SelectObject.transform.position += Vector3.left * Time.deltaTime; // Mover hacia la derecha (eje X)
+                if (Input.GetKey(KeyCode.W))
+                {
+                    SelectObject.transform.position += Vector3.back * Time.deltaTime;
+                }
+                if (Input.GetKey(KeyCode.S))
+                {
+                    SelectObject.transform.position += Vector3.forward * Time.deltaTime;
+                }
+                if (Input.GetKey(KeyCode.A))
+                {
+                    SelectObject.transform.position += Vector3.right * Time.deltaTime;
+                }
+                if (Input.GetKey(KeyCode.D))
+                {
+                    SelectObject.transform.position += Vector3.left * Time.deltaTime;
+                }
             }
         }
     }
@@ -104,7 +109,6 @@ public class ControladorJuego : MonoBehaviour
         {
             LeanTween.moveLocalY(EditorEscena, -400f, timeanim).setEase(animCurve);
         }
-        
     }
 
     public void PopupConstruccion() 
@@ -114,9 +118,11 @@ public class ControladorJuego : MonoBehaviour
         {
             LeanTween.moveLocalY(MenuObjetos, 450f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeConstruccion, -400f, timeanim).setEase(animCurve);
-                LeanTween.moveLocalY(MensajeMover, -800f, timeanim).setEase(animCurve);
-                LeanTween.moveLocalY(MensajeRotar, -800f, timeanim).setEase(animCurve);
-                LeanTween.moveLocalY(MensajeEliminar, -800f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeMover, -800f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeRotar, -800f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeEliminar, -800f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeEscalado, -800f, timeanim).setEase(animCurve);
+
         }
     }
     public void PopupMovimiento()
@@ -128,6 +134,7 @@ public class ControladorJuego : MonoBehaviour
             LeanTween.moveLocalY(MensajeConstruccion, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeRotar, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeEliminar, -800f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeEscalado, -800f, timeanim).setEase(animCurve);
         }
     }
     public void PopupRotacion()
@@ -136,6 +143,7 @@ public class ControladorJuego : MonoBehaviour
         if (PopRotacion)
         {
             LeanTween.moveLocalY(MensajeRotar, -400f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeEscalado, -400f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeMover, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeConstruccion, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeEliminar, -800f, timeanim).setEase(animCurve);
@@ -150,6 +158,8 @@ public class ControladorJuego : MonoBehaviour
             LeanTween.moveLocalY(MensajeMover, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeRotar, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeConstruccion, -800f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeEscalado, -800f, timeanim).setEase(animCurve);
+
         }
     }
     public void MaquinasR()
@@ -195,20 +205,22 @@ public class ControladorJuego : MonoBehaviour
             LeanTween.moveLocalY(MensajeMover, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeRotar, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MensajeEliminar, -800f, timeanim).setEase(animCurve);
+            LeanTween.moveLocalY(MensajeEscalado, -800f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MenuMR, 850f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MenuP, 850f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MenuMV, 850f, timeanim).setEase(animCurve);
             LeanTween.moveLocalY(MenuM, 850f, timeanim).setEase(animCurve);
         }
     }
-    private void CrearObjeto(GameObject Objetos, int objetoId)
+    public void CrearObjeto(GameObject Objetos, int objetoId)
     {
         if (Objetos != null)
         {
-            Vector3 posicionInicial = new Vector3(3, 1, 3); // Cambiar si se requiere otra posición
-            GameObject nuevoObjeto = Instantiate(Objetos, posicionInicial, Quaternion.identity);
+            Vector3 posicionInicialObjeto = new Vector3(3, 1, 3); // Cambiar si se requiere otra posición
+            GameObject nuevoObjeto = Instantiate(Objetos, posicionInicialObjeto, Quaternion.identity);
             nuevoObjeto.tag = "Select";
             nuevoObjeto.name = "Objetos" + objetoId;
+
         }
     }
     public void BorrarObjeto()
@@ -216,14 +228,29 @@ public class ControladorJuego : MonoBehaviour
         if (SelectObject != null)
         {
             Destroy(SelectObject);
-            SelectObject = null;  // Limpiar la referencia
+            SelectObject = null; 
         }
     }
+    public void EscalarObjeto()
+    {
+        if (SelectObject != null)
+        {
+            if (Input.GetKey(KeyCode.M))
+            {
+                LeanTween.scale(SelectObject, new Vector3(2, 2, 2),timeanim);
+            }
+            if (Input.GetKey(KeyCode.N))
+            {
+                LeanTween.scale(SelectObject, new Vector3(-2, -2, -2), timeanim);
+            }
+        }
+    }
+
     public void RotacionObjeto()
     {
         if (SelectObject != null)
         {
-            SelectObject.transform.Rotate(Vector3.up, 90f);  // Rotar 45 grados en el eje Y
+            SelectObject.transform.Rotate(Vector3.up, 90f);  
         }
     }
     public void MovimientoObjeto()
